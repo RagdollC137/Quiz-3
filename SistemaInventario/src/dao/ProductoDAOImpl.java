@@ -19,26 +19,39 @@ public class ProductoDAOImpl implements ProductoDAO {
     }
 
     @Override
-    public List<Producto> listar() {
-        List<Producto> lista = new ArrayList<>();
+public List<Producto> listar() {
+    List<Producto> lista = new ArrayList<>();
 
-        try (BufferedReader br = new BufferedReader(new FileReader(archivo))) {
-            String linea;
-            while ((linea = br.readLine()) != null) {
-                String[] datos = linea.split(",");
-                Producto p = new Producto(
-                        Integer.parseInt(datos[0]),
-                        datos[1],
-                        Integer.parseInt(datos[2]),
-                        Double.parseDouble(datos[3])
-                );
+    try (BufferedReader br = new BufferedReader(new FileReader(archivo))) {
+        String linea;
+        while ((linea = br.readLine()) != null) {
+
+            // 🔥 Ignorar líneas vacías
+            if (linea.trim().isEmpty()) continue;
+
+            String[] datos = linea.split(",");
+
+            // 🔥 Validar que tenga todos los datos
+            if (datos.length < 4) continue;
+
+            try {
+                int id = Integer.parseInt(datos[0]);
+                int cantidad = Integer.parseInt(datos[2]);
+                double precio = Double.parseDouble(datos[3]);
+
+                Producto p = new Producto(id, datos[1], cantidad, precio);
                 lista.add(p);
+
+            } catch (NumberFormatException e) {
+                System.out.println("Línea inválida ignorada: " + linea);
             }
-        } catch (IOException e) {
-            e.printStackTrace();
         }
-        return lista;
+    } catch (IOException e) {
+        e.printStackTrace();
     }
+
+    return lista;
+}
 
     @Override
     public Producto buscarPorId(int id) {
