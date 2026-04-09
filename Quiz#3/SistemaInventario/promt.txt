@@ -1,0 +1,25 @@
+El prompt utilizado para la ayuda de la creación del sistema fue el siguiente
+
+Que papi? Mae la vara está así, ocupo que ayude a hacer un codigo de Java, el codigo tiene que ser sobre un sistema básico de un inventario,
+ tiene que utilizar arquitectura por capas, aplicando buenas prácticas de desarrollo, tiene que tener una documentación formal, quiero que me
+ explique muy bien todo lo que se esté haciendo, porque aquí la vara es que entendamos todos, qué es la vara y el por qué de las cosas.
+ El Sistema me tiene que permitir registrar productos, listar productos, buscar productos por ID, Actualizar el producto, ELiminar el producto.
+ En la Arquitecura por capas se debe implementar Entidades, Acceso a Datos (DAO), Lógica de Negocio y Presentación (en la consola normal mejor,
+ ya que no estoy muy familiarizado con el JOptionPane). Hay alguna restricciones, como por ejemplo que no se mezclen capas, que desde presentación
+ no se tenga acceso a datos, y preferiblemente el uso de interfaces, que se usen archivos .txt, que la estructura sea tipo "Base de Datos" y que
+ no haya redundancia de datos. Modelo de datos mínimno) Producto: id, nombre, cantidad y precio Tiene que haber una documentación si o si, tiene
+ que haber un manual de usuario que tiene que incluir: Descripción del sistema, cómo se tiene que ejecutar, explicación del menú, y ejemplos de su uso.
+ También tiene que haber un manual Técnico, este debe inlcuir: Expliación de la estructura por capas, que le corresponde a cada clase, flujo del
+ sistema y decisiones tecnicas que fueron tomadas. un Diagrama de Clases(UML) que tiene que tener capas separadas, relaciones correctas y las
+ interfaces( si sí se usaron interfaces, si no, no) Necesito hacer un repositorio de esto en GitHub con control de versiones, minimo tiene que
+ haber ua versión v1.0 que será la estructura inicial, una v1.1 que será masomenos el CRUD funcional y una versión v1.2 que ya vamos a mejorar
+ y así. tiene que haber un changelog obligatorio, archivo: CHANGELOG.md por ejemplo: v1.0 - Creación de estructura base v1.1 - Implementación CRUD
+ v1.2 - Validaciones y mejoras en el entregable final que voy a subir a github va a tener que ir todo el codigo fuente, archivo .txt de datos. el manual
+ de usuario. manual tecnico. Diagrama UML, tiene que haber un prompts.txt en el que ira todos los cambios que yo escriba que hagamos y el prompt
+ origianl que es esté, y el CHANGELOG.md
+
+Lo que me envió la IA fue el codigo del programa base, me explicó como debía acomodar las cosas y el resultado esperado, hubo varias cosas que me explicó
+cómo hacerlas como el CHANGELOG y este mismo archivo de el prompt, con el paso de que iba acomodando el codigo antes de subirlo al GitHub fuí encontrando
+errores que mientras iba acomodando todo la misma IA me ayudó a arreglar, me advirtió de varias cosas que podián mejorarse y cambiar del todo, pero
+eso era un cambió que afectaría en las especificaciones de como debía quedar el codigo así que solo me ayudo a maximizar la eficacia de todo lo 
+que podiamos hacer.
