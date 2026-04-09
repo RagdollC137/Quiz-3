@@ -13,7 +13,7 @@ public class Main {
         int opcion;
 
         do {
-            System.out.println("\n=== INVENTARIO ===");
+            System.out.println("\n-------- Inventario --------");
             System.out.println("1. Registrar");
             System.out.println("2. Listar");
             System.out.println("3. Buscar");

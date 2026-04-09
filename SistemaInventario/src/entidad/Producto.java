@@ -12,8 +12,7 @@ public class Producto {
         this.cantidad = cantidad;
         this.precio = precio;
     }
-
-    // Getters y Setters
+// obtiene info y acomoda
     public int getId() { return id; }
     public String getNombre() { return nombre; }
     public int getCantidad() { return cantidad; }
@@ -23,7 +22,7 @@ public class Producto {
     public void setCantidad(int cantidad) { this.cantidad = cantidad; }
     public void setPrecio(double precio) { this.precio = precio; }
 
-    // Para guardar en txt
+    // Para que se guarde en .txt
     public String toFileString() {
         return id + "," + nombre + "," + cantidad + "," + precio;
     }

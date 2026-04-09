@@ -26,12 +26,12 @@ public List<Producto> listar() {
         String linea;
         while ((linea = br.readLine()) != null) {
 
-            // 🔥 Ignorar líneas vacías
+            //Ignorar las líneas vacías
             if (linea.trim().isEmpty()) continue;
 
             String[] datos = linea.split(",");
 
-            // 🔥 Validar que tenga todos los datos
+            //Valida que tenga todos los datos
             if (datos.length < 4) continue;
 
             try {

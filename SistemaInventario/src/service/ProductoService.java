@@ -11,13 +11,13 @@ public class ProductoService {
 
     public void registrar(Producto producto) {
 
-    // 🔴 Validar ID repetido
+    //Valida ID´s repetidos
     if (dao.buscarPorId(producto.getId()) != null) {
         System.out.println("⚠️ Error: Ya existe un producto con ese ID.");
         return;
     }
 
-    // 🔴 Validar nombre repetido
+    //Validar nombress repetidos
     for (Producto p : dao.listar()) {
         if (p.getNombre().equalsIgnoreCase(producto.getNombre())) {
             System.out.println("⚠️ Error: Ya existe un producto con ese nombre.");
@@ -25,7 +25,7 @@ public class ProductoService {
         }
     }
 
-    // 🔴 Validaciones extra (PRO)
+    //Validaciones extras
     if (producto.getNombre().trim().isEmpty()) {
         System.out.println("⚠️ Error: El nombre no puede estar vacío.");
         return;
@@ -41,7 +41,7 @@ public class ProductoService {
         return;
     }
 
-    // ✅ Si todo está bien
+    //Si condicional de si todo está bien
     dao.guardar(producto);
     System.out.println("✅ Producto registrado correctamente.");
 }
