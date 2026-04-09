@@ -34,6 +34,7 @@ public class Main {
 
                     System.out.print("Cantidad: ");
                     int cantidad = sc.nextInt();
+                    sc.nextLine();
 
                     System.out.print("Precio: ");
                     double precio = sc.nextDouble();
@@ -63,6 +64,7 @@ public class Main {
 
                     System.out.print("Nueva cantidad: ");
                     int nuevaCant = sc.nextInt();
+                    sc.nextLine();
 
                     System.out.print("Nuevo precio: ");
                     double nuevoPrecio = sc.nextDouble();
@@ -73,6 +75,7 @@ public class Main {
                 case 5:
                     System.out.print("ID a eliminar: ");
                     service.eliminar(sc.nextInt());
+                    sc.nextLine();
                     break;
             }
 
