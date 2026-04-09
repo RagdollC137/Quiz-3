@@ -23,3 +23,39 @@ cómo hacerlas como el CHANGELOG y este mismo archivo de el prompt, con el paso 
 errores que mientras iba acomodando todo la misma IA me ayudó a arreglar, me advirtió de varias cosas que podián mejorarse y cambiar del todo, pero
 eso era un cambió que afectaría en las especificaciones de como debía quedar el codigo así que solo me ayudo a maximizar la eficacia de todo lo 
 que podiamos hacer.
+
+Mejora del prompt:
+
+Actúa como un Desarrollador Java Senior y Arquitecto de Software. Necesito crear un sistema de inventario básico siguiendo principios de diseño robustos
+ y una separación de responsabilidades estricta.Requerimientos Funcionales (CRUD):
+El sistema debe permitir: Registrar, Listar, Buscar por ID, Actualizar y Eliminar productos (id, nombre, cantidad, precio).
+Restricciones Técnicas y Arquitectura:
+
+Arquitectura por Capas: Implementar estrictamente:
+
+Entidades: Objetos de dominio.
+
+Acceso a Datos (DAO): Persistencia en archivos .txt simulando una base de datos (sin redundancia).
+
+Lógica de Negocio (Service): Validaciones y reglas.
+
+Presentación: Interfaz de consola (Scanner), prohibido usar JOptionPane.
+
+Desacoplamiento: Uso obligatorio de Interfaces para los DAO y Servicios. No debe existir comunicación directa entre Presentación y Datos.
+
+Buenas Prácticas: Manejo de excepciones, tipado fuerte y código limpio (Clean Code).
+Entregables de Documentación:
+Genera el contenido para los siguientes archivos:
+
+Manual de Usuario: Descripción, guía de ejecución, explicación del menú y ejemplos.
+
+Manual Técnico: Detalle de la estructura de capas, responsabilidad de cada clase, flujo de datos y justificación de decisiones técnicas.
+
+Diagrama de Clases (UML): Representación en formato Mermaid o texto descriptivo detallado que muestre capas, relaciones e interfaces.
+
+CHANGELOG.md: Estructurado por versiones (v1.0 Estructura, v1.1 CRUD, v1.2 Mejoras).
+Instrucciones de Salida:
+Por favor, genera primero la estructura de carpetas sugerida. Luego, procede con el código paso a paso, explicando el "porqué" de cada decisión
+ arquitectónica para asegurar el aprendizaje del equipo. Finalmente, entrega los manuales y el contenido de los archivos Markdown.
+
+Utilicé una IA diferente a la primera para ayudarme a mejorar el primer prompt, esto es algo mas formal y creo que se entiende más.
